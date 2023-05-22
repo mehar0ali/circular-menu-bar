@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --hue-color: 250;
+
+    --first-color: hsl(var(--hue-color), 69%, 61%);
+    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --first-color-lighter: hsl(var(--hue-color), 92%, 82%);
+    --light-pink: hsl(0, 53%, 78%);
+    --light-green: hsl(143, 79%, 64%);
+    
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: var(--first-color-second);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    /* background: var(--light-green); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.wrapper li{
+    position: absolute;
+    left: 0;
+    font-size: 25px;
+    list-style: none; 
+    transform-origin: 100px;
+    transition: 0.5s;
+    transition-delay: calc(0.03s * var(--i));
+    transform: rotate(0deg) translateX(80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper.active li{
+    transform: rotate(calc(360deg / 8 * var(--i)));
+}
+
+.wrapper li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 50%;
+    background: #fff;
+    transform: rotate(calc(360deg / -8 * var(--i)));
+}
+
+.toggle{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    border-radius: 50%;
+    z-index: 1000;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15);
+    transition: 1.3s;
+}
+
+.wrapper.active .toggle{
+    transform: rotate(315deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .wrapper{
+    position: relative;
+    width: 400px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--light-green);
+    border-radius: 10px;
+}
+
+.wrapper ul{
+    display: flex;
+    width: 350px;
+}
+
+.wrapper ul li{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    list-style: none;
+}   
+
+.wrapper ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: #000;
+    align-items: center;
+}
+
+.wrapper ul li a .icon{
+    position: relative;
+    line-height: 75px;
+    font-size: 25px;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s ease;
+    z-index: 1;
+}
+
+.wrapper ul li.active a .icon{
+    transform: translateY(-35px);
+}
+
+.wrapper ul li a .text{
+    position: absolute;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 2px;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(20px);
+}
+
+.wrapper ul li.active a .text{
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+.toggle{
+    position: absolute;
+    top: -50%;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    border: 6px solid var(--first-color);
+    transition: 0.3s;
+}
+
+.toggle::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: var(--light-green);
+    border-top-right-radius: 20px;
+    box-shadow: 0 -10px 0 0px var(--first-color);
+
+}
+
+.toggle::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: var(--light-green);
+    border-top-left-radius: 20px;
+    box-shadow: 0 -10px 0 0px var(--first-color);
+
+}
+
+.wrapper ul li:nth-child(1).active ~ .toggle{
+    transform: translateX(calc(70px * 0));
+}
+
+.wrapper ul li:nth-child(2).active ~ .toggle{
+    transform: translateX(calc(70px * 1));
+}
+
+.wrapper ul li:nth-child(3).active ~ .toggle{
+    transform: translateX(calc(70px * 2));
+}
+
+.wrapper ul li:nth-child(4).active ~ .toggle{
+    transform: translateX(calc(70px * 3));
+}
+
+.wrapper ul li:nth-child(5).active ~ .toggle{
+    transform: translateX(calc(70px * 4));
+} */
+
+
